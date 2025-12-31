@@ -39,3 +39,13 @@
 
 # debug information files
 *.dwo
+
+# exclude local files
+test* 
+temp*
+prof*
+
+# exclude environment dictionaries
+.vscode/
+venv*/
+*.pyc

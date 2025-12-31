@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "gcc13",
+      "binaryDir": "${sourceDir}/build_gcc13",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "gcc-13",
+        "CMAKE_CXX_COMPILER": "g++-13"
+      }
+    },
+    {
+      "name": "gcc14",
+      "binaryDir": "${sourceDir}/build_gcc14",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "gcc-14",
+        "CMAKE_CXX_COMPILER": "g++-14"
+      }
+    },
+    {
+      "name": "clang18",
+      "binaryDir": "${sourceDir}/build_clang18",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang-18",
+        "CMAKE_CXX_COMPILER": "clang++-18"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "gcc13",
+      "configurePreset": "gcc13"
+    },
+    {
+      "name": "gcc14",
+      "configurePreset": "gcc14"
+    },
+    {
+      "name": "clang18",
+      "configurePreset": "clang18"
+    }
+  ]
+}

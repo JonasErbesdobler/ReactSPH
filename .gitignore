@@ -37,6 +37,10 @@
 *.out
 *.app
 
+# Build files
+*build*/
+CMakeFiles/
+
 # debug information files
 *.dwo
 
